@@ -36,6 +36,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.pamfirebase.ui.theme.viewmodel.FormErrorState
+import com.example.pamfirebase.ui.theme.viewmodel.FormState
+import com.example.pamfirebase.ui.theme.viewmodel.InsertUiState
+import com.example.pamfirebase.ui.theme.viewmodel.InsertViewModel
+import com.example.pamfirebase.ui.theme.viewmodel.MahasiswaEvent
 import com.example.pamfirebase.ui.theme.viewmodel.PenyediaViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
