@@ -48,8 +48,11 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.pamfirebase.R
 import com.example.pamfirebase.model.Mahasiswa
+import com.example.pamfirebase.ui.theme.viewmodel.HomeUiState
+import com.example.pamfirebase.ui.theme.viewmodel.HomeViewModel
 
 // Dialog konfirmasi untuk penghapusan data mahasiswa
 @Composable
