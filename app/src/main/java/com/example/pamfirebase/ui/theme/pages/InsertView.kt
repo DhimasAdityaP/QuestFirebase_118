@@ -262,4 +262,15 @@ fun FormMahasiswa(
         )
         Text(text = errorState.angkatan ?: "", color = Color.Red)
     }
+    // Input judul skripsi
+    OutlinedTextField(
+        value = mahasiswaEvent.jdlskripsi,
+        onValueChange = { onValueChange(mahasiswaEvent.copy(jdlskripsi = it)) },
+        label = { Text("Judul Skripsi") },
+        isError = errorState.jdlskripsi != null,
+        placeholder = { Text("Masukkan Judul Skripsi") },
+        modifier = Modifier.fillMaxWidth()
+    )
+    Text(text = errorState.jdlskripsi ?: "", color = Color.Red)
 }
+

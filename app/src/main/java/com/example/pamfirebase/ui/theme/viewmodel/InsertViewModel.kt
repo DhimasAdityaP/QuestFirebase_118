@@ -16,7 +16,10 @@ data class MahasiswaEvent (
     val gender: String = "",
     val alamat: String = "",
     val kelas: String = "",
-    val angkatan: String = ""
+    val angkatan: String = "",
+    val jdlskripsi:String="",
+    val pembimbing1:String="",
+    val pembimbing2:String=""
 )
 
 // Fungsi ekstensi untuk mengonversi MahasiswaEvent menjadi objek Mahasiswa.
@@ -26,7 +29,11 @@ fun MahasiswaEvent.toMahasiswa(): Mahasiswa = Mahasiswa(
     gender = gender,
     alamat = alamat,
     kelas = kelas,
-    angkatan = angkatan
+    angkatan = angkatan,
+    jdlskripsi=jdlskripsi,
+    pembimbing1=pembimbing1,
+    pembimbing2=pembimbing2
+
 )
 
 // Data class untuk menyimpan status kesalahan validasi inputan dari pengguna.
@@ -36,7 +43,10 @@ data class FormErrorState (
     val gender: String? = null,
     val alamat: String? = null,
     val kelas: String? = null,
-    val angkatan: String? = null
+    val angkatan: String? = null,
+    val jdlskripsi: String? =null,
+    val pembimbing1: String? = null,
+    val pembimbing2: String? =null
 ) {
     // Fungsi untuk memeriksa apakah semua inputan valid (tidak ada pesan kesalahan).
     fun isValid(): Boolean {

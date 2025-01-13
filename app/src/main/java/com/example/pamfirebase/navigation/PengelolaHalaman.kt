@@ -2,10 +2,14 @@ package com.example.pamfirebase.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.fragment.app.FragmentManager.BackStackEntry
 import androidx.navigation.NavHostController
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.pamfirebase.ui.theme.pages.DestinasiDetail
+import com.example.pamfirebase.ui.theme.pages.DetailView
 import com.example.pamfirebase.ui.theme.pages.HomeScreen
 import com.example.pamfirebase.ui.theme.pages.InsertMhsView
 
@@ -20,7 +24,7 @@ fun PengelolaHalaman (
         modifier = modifier
     ) {
         composable(route = DestinasiHome.route) {
-            HomeScreen (
+            HomeScreen(
                 navigateToItemEntry = { navController.navigate(DestinasiInsert.route) }
             )
         }
